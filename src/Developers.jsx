@@ -41,7 +41,7 @@ const Developers = () => {
         {developers.map((dev) => (
           <div
             key={dev.id}
-            className="border bg-gray-600 rounded-xl p-4 flex flex-col items-center shadow-md hover:shadow-lg transition"
+            className="border bg-gray-600 rounded-xl p-4 flex flex-col items-center shadow-md hover:shadow-lg transition transform hover:scale-105 transition"
           >
             <img
               src={dev.image}

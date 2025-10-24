@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 import defaultImage from "../src/assets/569109798_1542145253605208_6687226149270206611_n.jpg";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const { user, logout } = useAuth();
+  const[open,setOpen]=useState(false);
 
   return (
     <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
       <Link to="/" className="text-2xl font-bold">Gamehub</Link>
 
       <nav className="flex items-center gap-6">
-        <Link to="/">Home</Link>
-        <Link to="/developers">Developers</Link>
+         <span className='flex' onClick={()=>setOpen(!open)}>
+                {
+                    open?
+                    <X className='md:hidden'></X>:
+                    <Menu className='md:hidden'></Menu>
+                }
+                 <ul className={`md:hidden absolute  duration-1000 text-black ${open?'top-10' :'-top-40'} bg-[#5f715f]`}>
+                 <div className="grid grid-row-2">
+                  <Link to="/">Home</Link>
+                  <Link to="/developers">Developers</Link>
+                </div>
+                </ul>
+            </span>
+            
+            <ul className='md:flex gap-5 my-10 hidden'>
+                
+                 <Link to="/">Home</Link>
+                 <Link to="/developers">Developers</Link>
+                
+            </ul>
 
         {!user ? (
           <>
