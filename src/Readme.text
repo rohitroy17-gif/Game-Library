@@ -1,0 +1,44 @@
+# Gamehub - A Game Library
+
+## 🔹 Project Name
+**Gamehub**
+
+## 🔹 Purpose
+Gamehub is an engaging online library for discovering and supporting game developers. Users can browse indie games, see detailed information, and install them if they like. It provides an interactive experience for gamers and promotes indie game developers.
+
+## 🔹 Live URL
+[https://your-live-gamehub-url.com](https://your-live-gamehub-url.com)
+
+## 🔹 Key Features
+- **Browse Games**: View a curated collection of indie games with detailed information.
+- **Game Details**: Click on a game card to see full details like description, ratings, developer, category, and download link.
+- **Authentication**:
+  - Email & Password Registration/Login
+  - Google Login
+  - Password validation (uppercase, lowercase, min 6 characters)
+- **Profile Management**:
+  - View user profile with name, email, and profile picture
+  - Update name and profile picture
+- **Protected Routes**: Some pages are only accessible when logged in.
+- **Dynamic Features**:
+  - Dynamic tab title based on the current page
+  - Dynamic profile image (user's uploaded image or Google profile photo)
+- **Newsletter Subscription**: Users can subscribe to the newsletter on the homepage.
+- **Additional Route**: Developers page showcasing featured indie game developers.
+- **Responsive Design**: Works on mobile and desktop devices.
+
+## 🔹 Technologies & NPM Packages Used
+- **React** - Frontend library for building UI
+- **React Router DOM** - Routing and navigation
+- **Firebase** - Authentication and user management
+- **Tailwind CSS** - Styling and responsive design
+- **React Slick** - Banner/slider functionality
+- **React Helmet Async** (optional) - Dynamic tab titles
+- **Other Packages**:
+  - `react-icons` or `lucide-react` for icons
+  - `react-toastify` (optional) for notifications
+
+## 🔹 Installation
+1. Clone the repository:  
+```bash
+git clone https://github.com/rohitroy17-gif/gamehub.git

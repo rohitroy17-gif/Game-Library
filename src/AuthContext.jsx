@@ -1,4 +1,5 @@
 // src/context/AuthContext.jsx
+// src/context/AuthContext.jsx
 import React, { createContext, useContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
@@ -27,6 +28,7 @@ export const AuthProvider = ({ children }) => {
   const register = async (name, email, password, photoURL) => {
     const result = await createUserWithEmailAndPassword(auth, email, password);
     await updateProfile(result.user, { displayName: name, photoURL });
+    setUser({ ...result.user }); // update state
     return result.user;
   };
 
@@ -36,26 +38,25 @@ export const AuthProvider = ({ children }) => {
 
   const googleLogin = async () => {
     const provider = new GoogleAuthProvider();
-    return signInWithPopup(auth, provider);
+    const result = await signInWithPopup(auth, provider);
+    setUser(result.user); // update state
+    return result.user;
   };
 
   const logout = () => signOut(auth);
 
   const resetPassword = async (email) => sendPasswordResetEmail(auth, email);
 
-  // ✅ Update User Info
   const updateUserInfo = async (name, photoURL) => {
     if (!auth.currentUser) throw new Error("No user logged in");
-    await updateProfile(auth.currentUser, {
-      displayName: name,
-      photoURL: photoURL,
-    });
-    // Refresh local user state
-    setUser({ ...auth.currentUser });
+    await updateProfile(auth.currentUser, { displayName: name, photoURL });
+    setUser({ ...auth.currentUser }); // refresh user state
   };
 
   return (
-    <AuthContext.Provider value={{ user, register, login, googleLogin, logout, resetPassword, updateUserInfo }}>
+    <AuthContext.Provider
+      value={{ user, register, login, googleLogin, logout, resetPassword, updateUserInfo }}
+    >
       {children}
     </AuthContext.Provider>
   );
