@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknown's Battle Ground: PUBG",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/7/78/PUBGCorpABHC.png",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Among Us",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/3/38/Multiplayer.it_logo.svg",
+    "category": "Multiplayer",
+    "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a multiplayer social deduction game where crewmates work together to complete tasks while impostors try to eliminate them.",
+    "ratings": "4.2",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "3",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/3/30/Call_of_Duty_Modern_Warfare_Gamescom_2019_%2848605842367%29.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty Mobile brings the classic FPS experience to mobile with multiplayer modes, battle royale, and iconic maps.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "4",
+    "title": "Minecraft",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Minecraft_Trails_and_Tales_Art.png",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/en-us",
+    "description": "Minecraft is a sandbox game where players build and explore limitless worlds made of blocks.",
+    "ratings": "4.7",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "5",
+    "title": "Fortnite",
+    "coverPhoto": "https://example.com/images/fortnite.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+    "description": "Fortnite is a battle royale game where players fight to be the last one standing while building structures and using unique weapons.",
+    "ratings": "4.3",
+    "developer": "Epic Games"
+  }
+]
