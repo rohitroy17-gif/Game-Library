@@ -14,7 +14,7 @@ const GameDetails = () => {
   if (!game) return <p>Game not found</p>;
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container max-w-full p-4 bg-gray-800">
       <img src={game.coverPhoto} alt={game.title} className="w-full h-64 object-cover rounded"/>
       <h1 className="text-2xl font-bold mt-4">{game.title}</h1>
       <p className="mt-2">{game.description}</p>
