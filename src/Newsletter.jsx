@@ -11,7 +11,8 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="mt-12 bg-gray-100 p-6 rounded">
+    <div className="mt-12 bg-gray-100 p-6 rounded bg-indigo-900
+">
       <h2 className="text-xl font-bold mb-4">Subscribe to our Newsletter</h2>
       <form onSubmit={handleSubmit} className="flex gap-2">
         <input
