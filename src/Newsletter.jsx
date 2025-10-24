@@ -21,9 +21,9 @@ const Newsletter = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="p-2 border rounded flex-grow"
+          className="p-2 border rounded flex-grow focus:outline-none"
         />
-        <button type="submit" className="bg-blue-600 text-white px-4 rounded">Subscribe</button>
+        <button type="submit" className="bg-blue-600 text-white px-4 rounded font-semibold transition">Subscribe</button>
       </form>
     </div>
   );

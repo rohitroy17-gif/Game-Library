@@ -14,13 +14,13 @@ const GameDetails = () => {
   if (!game) return <p>Game not found</p>;
 
   return (
-    <div className="container max-w-full p-4 bg-gray-800">
+    <div className="container max-w-full p-4 bg-gray-600">
       <img src={game.coverPhoto} alt={game.title} className="w-full h-64 object-cover rounded"/>
-      <h1 className="text-2xl font-bold mt-4">{game.title}</h1>
-      <p className="mt-2">{game.description}</p>
-      <p className="mt-2">Category: {game.category}</p>
-      <p className="mt-2">Developer: {game.developer}</p>
-      <p className="mt-2">Rating: {game.ratings}</p>
+      <h1 className="text-2xl font-bold mt-4 ">{game.title}</h1>
+      <p className="mt-2 font-semibold">{game.description}</p>
+      <p className="mt-2 font-semibold">Category: {game.category}</p>
+      <p className="mt-2 font-semibold">Developer: {game.developer}</p>
+      <p className="mt-2 font-semibold">⭐Rating: {game.ratings}</p>
       <a href={game.downloadLink} target="_blank" rel="noreferrer" className="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded">Download</a>
     </div>
   );
