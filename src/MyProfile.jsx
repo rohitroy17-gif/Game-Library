@@ -7,10 +7,10 @@ import defaultImage from "../src/assets/569109798_1542145253605208_6687226149270
 const MyProfile = () => {
   const { user } = useAuth();
 
-  if (!user) return <p className="text-center mt-10">Please log in first.</p>;
+  if (!user) return <p className="text-center mt-10 ">Please log in first.</p>;
 
   return (
-    <div className="flex flex-col items-center mt-10">
+    <div className="flex flex-col items-center mt-10  ">
       <img
         src={user.photoURL || defaultImage}
         alt="Profile"

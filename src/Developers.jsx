@@ -29,19 +29,19 @@ const developers = [
 const Developers = () => {
   return (
     <>
-    <div className="container text-center text-red-400 text-3xl mx-auto p-4">
+    <div className="container text-center text-red-400 text-3xl bg-gray-800 max-w-full p-4">
       <Helmet>
         <title>Developers | Gamehub</title>
       </Helmet>
       <b><h1>Featured Game Developers</h1></b>
     </div>
-    <div className="p-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">Featured Developers</h2>
-      <div className="grid md:grid-cols-3 gap-6">
+    <div className="p-10 bg-gray-800">
+      <h2 className="text-3xl font-bold mb-18 text-center">Featured Developers</h2>
+      <div className="grid md:grid-cols-3 rounded-2xl gap-6">
         {developers.map((dev) => (
           <div
             key={dev.id}
-            className="border rounded-xl p-4 flex flex-col items-center shadow-md hover:shadow-lg transition"
+            className="border bg-gray-600 rounded-xl p-4 flex flex-col items-center shadow-md hover:shadow-lg transition"
           >
             <img
               src={dev.image}
@@ -49,7 +49,7 @@ const Developers = () => {
               className="w-24 h-24 object-contain mb-4"
             />
             <h3 className="text-xl font-semibold">{dev.name}</h3>
-            <p className="text-gray-600 text-center mt-2">{dev.bio}</p>
+            <b><p className="text-red-800 text-center mt-2">{dev.bio}</p></b>
             <a
               href={dev.website}
               target="_blank"
