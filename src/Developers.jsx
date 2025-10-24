@@ -6,7 +6,7 @@ const developers = [
   {
     id: 1,
     name: "Krafton",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/37/Krafton_logo.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Krafton_Full_Logo.png",
     bio: "Creators of PUBG, known for immersive online gaming experiences.",
     website: "https://www.krafton.com/",
   },
@@ -20,7 +20,7 @@ const developers = [
   {
     id: 3,
     name: "InnerSloth",
-    image: "https://upload.wikimedia.org/wikipedia/en/3/34/Among_Us_logo.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/The_Wolf_Among_Us_Logo.png",
     bio: "An indie studio best known for the viral hit 'Among Us'.",
     website: "https://www.innersloth.com/",
   },
